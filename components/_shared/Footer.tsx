@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
           <svg fill="currentColor" viewBox="0 0 64 64" {...props}>
             <path
               fillRule="evenodd"
-              d="M3.078 22.331h12.188v36.844H3.078z 
+              d="M3.078 22.331h12.188v36.844H3.078z
               M46.719 21.112c-5.344 0-8.531 1.969-11.906 6.281v-5.062H22.625v36.844h12.281V39.206c0-4.219 2.156-8.344 7.031-8.344s7.781 4.125 7.781 8.25v20.063H62V38.269c0-14.532-9.844-17.157-15.281-17.157z
               M9.219 4.425C5.188 4.425 2 7.331 2 10.894s3.188 6.469 7.219 6.469 7.219-2.906 7.219-6.469-3.188-6.469-7.219-6.469z"
               clipRule="evenodd"
@@ -82,11 +82,11 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-white">
+    <footer className="bg-gradient-to-b from-white to-yellow-50 border-t-4 border-beeyellow">
       <div className="custom-container flex flex-col flex-wrap py-10 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
         <div className="justify-between w-full text-center md:text-left lg:flex">
           <div className="w-full lg:w-1/3 md:w-1/2">
-            <h2 className="mt-4 mb-4 font-roboto font-black">ABOUT DATOPIAN</h2>
+            <h2 className="mt-4 mb-4 font-roboto font-black text-beeblack">🐝 ABOUT THE HIVE</h2>
             <ul className="space-y-4 text-sm list-none">
               {navigation.about.map((item) => (
                 <li key={item.name}>
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="w-full lg:w-1/3 md:w-1/2">
-            <h2 className="mt-4 mb-4 font-roboto font-black">USEFUL LINKS</h2>
+            <h2 className="mt-4 mb-4 font-roboto font-black text-beeblack">🌻 USEFUL LINKS</h2>
             <ul className="space-y-4 text-sm list-none">
               {navigation.useful.map((item) => (
                 <li key={item.name}>
@@ -118,8 +118,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-between text-center md:text-left">
-          <h2 className="mt-4 mb-4 font-roboto font-black">
-            STAY UP TO DATE WITH THE NEWS
+          <h2 className="mt-4 mb-4 font-roboto font-black text-beeblack">
+            🖆 CONNECT WITH THE COLONY
           </h2>
           <div className="flex mt-5 space-x-5 justify-center md:justify-start">
             {navigation.social.map((item) => (
@@ -132,14 +132,19 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="custom-container flex flex-col flex-wrap py-6 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
-        <a
-          href="https://portaljs.org"
-          target="_blank"
-          className="text-xl font-medium"
-          rel="noreferrer"
-        >
-          🌀 PortalJS
-        </a>
+        <div className="flex items-center justify-between w-full">
+          <a
+            href="https://portaljs.org"
+            target="_blank"
+            className="text-xl font-medium"
+            rel="noreferrer"
+          >
+            🐝 Powered by PortalJS
+          </a>
+          <span className="text-sm text-beeblack font-semibold">
+            🎯 © 2024 Abeelha's Data Hive - Where Data Makes Honey
+          </span>
+        </div>
       </div>
     </footer>
   );

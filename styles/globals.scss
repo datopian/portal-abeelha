@@ -6,10 +6,15 @@
 :root {
   --light-gray: #f7fafc;
   --light-gray-2: #eaeaea;
-  --mid-blue: #0070f3;
-  --accent: hsl(182, 100%, 38%);
+  --mid-blue: #FFB800;
+  --accent: #FFB800;
   --indicator-size: 3px;
-  --text-active-color: black;
+  --text-active-color: #1A1A1A;
+  --text-gray: #6b7280;
+  --bee-yellow: #FFB800;
+  --honey-gold: #FFC933;
+  --bee-black: #1A1A1A;
+  --bee-purple: #7C3AED;
 }
 
 a {
@@ -40,9 +45,21 @@ body {
 }
 
 .tag-checkbox:checked + label {
-  background-color: #00bbc2;
-  color: white;
+  background-color: #FFB800;
+  color: #1A1A1A;
+  font-weight: bold;
   transition: 0.1s;
+}
+
+.hexagon-pattern {
+  background-image: 
+    linear-gradient(30deg, #FFB800 12%, transparent 12.5%, transparent 87%, #FFB800 87.5%, #FFB800),
+    linear-gradient(150deg, #FFB800 12%, transparent 12.5%, transparent 87%, #FFB800 87.5%, #FFB800),
+    linear-gradient(30deg, #FFB800 12%, transparent 12.5%, transparent 87%, #FFB800 87.5%, #FFB800),
+    linear-gradient(150deg, #FFB800 12%, transparent 12.5%, transparent 87%, #FFB800 87.5%, #FFB800);
+  background-size: 40px 70px;
+  background-position: 0 0, 0 0, 20px 35px, 20px 35px;
+  opacity: 0.03;
 }
 
 snap-tabs {

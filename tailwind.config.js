@@ -2,7 +2,7 @@ const colors = require("tailwindcss/colors");
 const Color = require("color");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
-const themeColor = process.env.NEXT_PUBLIC_THEME_COLOR || "#4977AB";
+const themeColor = process.env.NEXT_PUBLIC_THEME_COLOR || "#FFB800";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -32,6 +32,10 @@ module.exports = {
         darkaccent: Color(themeColor).darken(0.3).hex(), // Darken by 20%
         darkbrown: "#A75001",
         darkerbrown: "#964800",
+        beeyellow: "#FFB800",
+        honeygold: "#FFC933",
+        beeblack: "#1A1A1A",
+        beepurple: "#7C3AED",
         background: {
           DEFAULT: colors.white,
           dark: colors.slate[900],

@@ -37,7 +37,7 @@ const SearchForm: React.FC = () => {
       />
       <button
         type="submit"
-        className={`text-lg border-b-[4px] border-accent rounded-[10px] ${styles.bgDark}  uppercase font-medium px-3 py-3 md:px-10 md:py-4 leading-none lg:mt-0 ${styles.textLight} `}
+        className={`text-lg border-b-[4px] border-beeblack rounded-[10px] bg-beeyellow hover:bg-honeygold transition-all uppercase font-bold px-3 py-3 md:px-10 md:py-4 leading-none lg:mt-0 text-beeblack shadow-lg hover:shadow-xl`}
       >
         <MagnifyingGlassIcon width={24} className="sm:hidden" />
         <span className="hidden sm:block">Search</span>
